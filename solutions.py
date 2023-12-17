@@ -11,6 +11,12 @@ def exercise2():
     print(my_list[1].upper())
     print(my_list[0][::-1])
 
+'''In the case of [::-1], it means:
+
+    start is omitted, so slicing starts from the beginning.
+    stop is omitted, so slicing goes till the end.
+    step is -1, which means that we go through the sequence in reverse order.'''
+
 # Exercise 3: Printing Every Other Name
 def exercise3():
     names = ["Alice", "Bob", "Carol", "Dave"]
@@ -66,25 +72,24 @@ def exercise10():
     for name in names:
         print(name)
 
-# Exercise 11: Sum of Numbers Until 0
+
+# Exercise 11: Sum of Numbers Until 0 
 def exercise11():
     sum = 0
-    while True:
-        number = int(input("Enter a number (0 to stop): "))
-        if number == 0:
-            break
+    number = int(input("Enter a number (0 to stop): "))
+    while number != 0:
         sum += number
+        number = int(input("Enter a number (0 to stop): "))
     print("Sum:", sum)
 
-# Exercise 12: Find Longest Word
+# Exercise 12: Find Longest Word 
 def exercise12():
     longest_word = ""
-    while True:
-        word = input("Enter a word ('done' to stop): ")
-        if word == 'done':
-            break
+    word = input("Enter a word ('done' to stop): ")
+    while word != 'done':
         if len(word) > len(longest_word):
             longest_word = word
+        word = input("Enter a word ('done' to stop): ")
     print("Longest word:", longest_word)
 
 # Exercise 13: Function to Print String Length
@@ -102,12 +107,3 @@ def is_string_longer(s, n):
 # Exercise 16: Copy String
 def copy_string(s, times=1):
     return s * times
-
-# Main function to run the exercises
-def main():
-    exercise1()
-    exercise2()
-    # ... You can call other exercises here as needed
-
-if __name__ == "__main__":
-    main()
