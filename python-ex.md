@@ -1,7 +1,8 @@
 Review Exercises
 
 
-Conditions
+## Conditions
+
 Write code that gets three words from a user and inputs them into a sentence using F-Strings.
 Exercise: Write a list that contains 2 strings. Print the second string in uppercase and then the first string backwards.
 Write code for a list that contains four names and prints every other name.
